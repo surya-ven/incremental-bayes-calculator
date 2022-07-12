@@ -17,9 +17,6 @@ def get_Ms():
         i += 1
     return Ms
 
-# def calc_posterior(p_M_H, p_M_nH, M, new_H):
-#     return p_M_H * new_H / (p_M_H * new_H + p_M_nH * (1 - new_H))
-
 def incr_bayes_table():
     p_H, p_M_H, p_nM_nH = get_query()
     p_nM_H, p_M_nH = 1 - p_M_H, 1 - p_nM_nH
